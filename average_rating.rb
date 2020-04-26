@@ -78,14 +78,14 @@ class AverageRating
     }
   end
 
-  def score_average(amount, sum)
+  def calculate_average(amount, sum)
     sum / amount
   end
 
   def show_data
-    math_ave = self.score_average(self.math_data[:amount], self.math_data[:sum]).round(2)
-    rus_ave = self.score_average(self.rus_data[:amount], self.rus_data[:sum]).round(2)
-    phys_ave = self.score_average(self.phys_data[:amount], self.phys_data[:sum]).round(2)
+    math_ave = self.calculate_average(self.math_data[:amount], self.math_data[:sum]).round(2)
+    rus_ave = self.calculate_average(self.rus_data[:amount], self.rus_data[:sum]).round(2)
+    phys_ave = self.calculate_average(self.phys_data[:amount], self.phys_data[:sum]).round(2)
 
     {
       math: "#{math_ave}",
