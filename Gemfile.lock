@@ -1,0 +1,19 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    escape_utils (1.2.1)
+    json (2.3.0)
+    ox (2.11.0)
+    xmlhasher (1.0.5)
+      escape_utils (~> 1.2)
+      ox (~> 2.11.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  json
+  xmlhasher
+
+BUNDLED WITH
+   2.1.4
